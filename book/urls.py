@@ -1,8 +1,8 @@
-from django.urls import path, include
-from .views import get_all_books, BookView
+from django.urls import path
 from rest_framework.routers import DefaultRouter
+from .views import BookView
 
 router = DefaultRouter()
-router.register(r'', BookView)
+router.register('', BookView)
 
 urlpatterns = router.urls

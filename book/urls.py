@@ -5,4 +5,7 @@ from .views import BookView
 router = DefaultRouter()
 router.register('', BookView)
 
-urlpatterns = router.urls
+# urlpatterns = router.urls
+urlpatterns = [
+    path('', BookView.as_view({'get': 'list'}))
+]

@@ -5,4 +5,5 @@ from .views import UserView
 router = DefaultRouter()
 router.register('', UserView)
 
+
 urlpatterns = router.urls
